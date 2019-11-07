@@ -1,0 +1,15 @@
+type Query {
+  get<%= classify(name) %>s: [<%= classify(name) %>]
+  <%= lowerCase(name) %>(id: ID!): <%= classify(name) %>
+  <%= lowerCase(name) %>ByUserId(id: ID!): <%= classify(name) %>
+}
+
+type Mutation {
+  create<%= classify(name) %>(name: String): <%= classify(name) %>
+}
+
+type <%= classify(name) %> {
+  id: Int
+  name: String
+  userId: Int
+}
