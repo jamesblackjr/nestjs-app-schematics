@@ -6,6 +6,11 @@
       "factory": "./lib/schematics/graphql-module/graphql-module.factory#main",
       "schema": "./lib/schematics/graphql-module/schema.json"
     },
+    "prisma-module": {
+      "description": "Schematic to generate a Prisma module.",
+      "factory": "./lib/schematics/prisma-module/prisma-module.factory#main",
+      "schema": "./lib/schematics/prisma-module/schema.json"
+    },
     "rest-module": {
       "description": "Schematic to generate a REST module.",
       "factory": "./lib/schematics/rest-module/rest-module.factory#main",
