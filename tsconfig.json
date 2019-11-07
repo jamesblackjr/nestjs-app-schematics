@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "typeRoots": ["node_modules/@types"],
+    "declaration": true,
+    "rootDir": "./lib",
+    "baseUrl": "./",
+    "noLib": false,
+    "skipLibCheck": true
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts", "lib/**/files/**"]
+}
