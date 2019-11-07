@@ -1,5 +1,9 @@
 # NestJS App Schematics Changelog
 
+1.1.1:
+
+* [[`932159c3a2`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/932159c3a2)] - Fix missing name property in TypeORM module generator. (James A. Black Jr)
+
 1.1.0:
 
 * [[`e79b1ca543`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/e79b1ca543)] - Add Auth Module Generator. (James A. Black Jr)
