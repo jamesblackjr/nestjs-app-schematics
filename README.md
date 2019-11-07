@@ -3,6 +3,12 @@
 ## Installation
 
 ```bash
+npm install -g nestjs-app-schematics
+```
+
+Or, install from git:
+
+```bash
 git clone https://github.com/jamesblackjr/nestjs-app-schematics.git
 cd nestjs-app-schematics
 npm install && npm link
