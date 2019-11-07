@@ -20,7 +20,7 @@ nest generate -c nestjs-app-schematics rest-module <model-name> [path]
 nest generate -c nestjs-app-schematics sequelize-module <model-name> [path]
 ```
 
-**Note:** Replace `<model-name>` with the singular form of your entity/data model.
+**Note:** Replace `<model-name>` with the singular form of your entity/data model name.
 
 Credits:
 
