@@ -21,14 +21,14 @@ import { ModuleFinder } from '../../utils/module.finder';
 import { Location, NameParser } from '../../utils/name.parser';
 import { mergeSourceRoot } from '../../utils/source-root.helpers';
 
-import { RestModOptions } from './rest-module.schema';
+import { TypeORMModOptions } from './typeorm-module.schema';
 
 import {
   lowerCase,
   upperCase
 } from '../../utils/string-utils';
 
-export function main(options: RestModOptions): Rule {
+export function main(options: TypeORMModOptions): Rule {
   options = transform(options);
   return (tree: Tree, context: SchematicContext) => {
     return branchAndMerge(
@@ -41,8 +41,8 @@ export function main(options: RestModOptions): Rule {
   };
 }
 
-function transform(options: RestModOptions): RestModOptions {
-  const target: RestModOptions = Object.assign({}, options);
+function transform(options: TypeORMModOptions): TypeORMModOptions {
+  const target: TypeORMModOptions = Object.assign({}, options);
 
   target.metadata = 'imports';
   target.type = 'module';
@@ -54,7 +54,7 @@ function transform(options: RestModOptions): RestModOptions {
   return target;
 }
 
-function generate(options: RestModOptions) {
+function generate(options: TypeORMModOptions) {
   return (context: SchematicContext) =>
     apply(url(join('./files' as Path, options.language)), [
       template({
@@ -67,7 +67,7 @@ function generate(options: RestModOptions) {
     ])(context);
 }
 
-function addDeclarationToModule(options: RestModOptions): Rule {
+function addDeclarationToModule(options: TypeORMModOptions): Rule {
   return (tree: Tree) => {
     if (options.skipImport !== undefined && options.skipImport) {
       return tree;

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "RestModuleSchema",
-  "title": "Nest REST Module Options Schema",
+  "id": "TypeORMModuleSchema",
+  "title": "Nest TypeORM Module Options Schema",
   "type": "object",
   "properties": {
     "name": {

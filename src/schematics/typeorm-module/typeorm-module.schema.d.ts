@@ -1,4 +1,4 @@
-export interface RestModOptions {
+export interface TypeORMModOptions {
   /**
    * The name of the module.
    */

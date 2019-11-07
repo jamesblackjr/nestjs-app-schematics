@@ -16,10 +16,10 @@
       "factory": "./lib/schematics/prisma-module/prisma-module.factory#main",
       "schema": "./lib/schematics/prisma-module/schema.json"
     },
-    "rest-module": {
-      "description": "Schematic to generate a REST module.",
-      "factory": "./lib/schematics/rest-module/rest-module.factory#main",
-      "schema": "./lib/schematics/rest-module/schema.json"
+    "typeorm-module": {
+      "description": "Schematic to generate a TypeORM module.",
+      "factory": "./lib/schematics/typeorm-module/typeorm-module.factory#main",
+      "schema": "./lib/schematics/typeorm-module/schema.json"
     },
     "sequelize-module": {
       "description": "Schematic to generate a Sequelize module.",
