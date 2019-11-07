@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
+    "graphql-module": {
+      "description": "Schematic to generate a GraphQL module.",
+      "factory": "./lib/schematics/graphql-module/graphql-module.factory#main",
+      "schema": "./lib/schematics/graphql-module/schema.json"
+    },
     "rest-module": {
       "description": "Schematic to generate a REST module.",
       "factory": "./lib/schematics/rest-module/rest-module.factory#main",

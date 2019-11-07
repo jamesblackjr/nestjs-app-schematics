@@ -6,10 +6,6 @@ export class <%= classify(name) %> extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  /*
-   * TODO: Insert Your <%= classify(name) %> Entity Columns/Data Schema
-   */
-
   @Column()
   name: string;
 
