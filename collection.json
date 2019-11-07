@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
+    "auth-module": {
+      "description": "Schematic to generate a Authentication module.",
+      "factory": "./lib/schematics/auth-module/auth-module.factory#main",
+      "schema": "./lib/schematics/auth-module/schema.json"
+    },
     "graphql-module": {
       "description": "Schematic to generate a GraphQL module.",
       "factory": "./lib/schematics/graphql-module/graphql-module.factory#main",

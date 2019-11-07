@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "AuthModuleSchema",
+  "title": "Nest Authentication Module Options Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the module."
+    },
+    "module": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to import the module."
+    },
+    "language": {
+      "type": "string",
+      "description": "Nest module language (ts/js)."
+    },
+    "sourceRoot": {
+      "type": "string",
+      "description": "Nest module source root directory."
+    },
+    "skipImport": {
+      "description": "Flag to skip the module import.",
+      "default": false
+    }
+  },
+  "required": []
+}

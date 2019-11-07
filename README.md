@@ -19,6 +19,7 @@ npm install && npm link
 Run the Nest CLI `generate` command with the `-c` flag to import the `nestjs-app-schematics` collections from your project directory.
 
 ```bash
+nest generate -c nestjs-app-schematics auth-module [path]
 nest generate -c nestjs-app-schematics graphql-module <model-name> [path]
 nest generate -c nestjs-app-schematics mongoose-module <model-name> [path]
 nest generate -c nestjs-app-schematics prisma-module <model-name> [path]
