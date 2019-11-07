@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "rest-module": {
+      "description": "Schematic to generate a REST module.",
+      "factory": "./lib/schematics/rest-module/rest-module.factory#main",
+      "schema": "./lib/schematics/rest-module/schema.json"
+    }
+  }
+}
