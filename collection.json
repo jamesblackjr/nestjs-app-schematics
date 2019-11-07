@@ -20,6 +20,11 @@
       "description": "Schematic to generate a REST module.",
       "factory": "./lib/schematics/rest-module/rest-module.factory#main",
       "schema": "./lib/schematics/rest-module/schema.json"
+    },
+    "sequelize-module": {
+      "description": "Schematic to generate a Sequelize module.",
+      "factory": "./lib/schematics/sequelize-module/sequelize-module.factory#main",
+      "schema": "./lib/schematics/sequelize-module/schema.json"
     }
   }
 }
