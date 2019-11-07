@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesblackjr/app-schematics"
+    "url": "git+https://github.com/jamesblackjr/nestjs-app-schematics"
   },
   "contributors": [
     "James Black"
   ],
   "bugs": {
-    "url": "https://github.com/jamesblackjr/app-schematics/issues"
+    "url": "https://github.com/jamesblackjr/nestjs-app-schematics/issues"
   },
-  "homepage": "https://github.com/jamesblackjr/app-schematics/#README",
+  "homepage": "https://github.com/jamesblackjr/nestjs-app-schematics/#README",
   "readmeFilename": "README.md",
   "dependencies": {
     "@angular-devkit/core": "8.3.4",
