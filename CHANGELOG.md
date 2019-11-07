@@ -2,7 +2,7 @@
 
 1.1.0:
 
-* [[`a91c5e6be4`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/a91c5e6be4)] - Add Auth Module Generator. (James A. Black Jr)
+* [[`e79b1ca543`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/e79b1ca543)] - Add Auth Module Generator. (James A. Black Jr)
 
 1.0.1:
 
