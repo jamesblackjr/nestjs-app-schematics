@@ -34,10 +34,11 @@ export class <%= classify(name) %>Repository extends Repository<<%= classify(nam
   }
 
   async create<%= classify(name) %>(create<%= classify(name) %>Dto: Create<%= classify(name) %>Dto, user: User): Promise<<%= classify(name) %>> {
-    const { } = create<%= classify(name) %>Dto;
+    const { name } = create<%= classify(name) %>Dto;
 
     const <%= lowerCase(name) %> = new <%= classify(name) %>();
 
+    <%= lowerCase(name) %>.name = name;
     <%= lowerCase(name) %>.user = user;
 
     try {
