@@ -20,4 +20,7 @@ nest generate -c nestjs-app-schematics rest-module <model-name> [path]
 
 **Note:** Replace `<model-name>` with the singular form of your entity/data model.
 
-Credits: Some schematics were ported from [https://github.com/ashinzekene/generator-nestjs-app](https://github.com/ashinzekene/generator-nestjs-app) and `utils` folder was cloned from [https://github.com/nestjs/schematics](https://github.com/nestjs/schematics).
+Credits:
+
+- Some schematics were ported from [https://github.com/ashinzekene/generator-nestjs-app](https://github.com/ashinzekene/generator-nestjs-app).
+- Also, the `utils` folder was cloned from [https://github.com/nestjs/schematics](https://github.com/nestjs/schematics).
