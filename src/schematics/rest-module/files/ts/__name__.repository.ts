@@ -16,10 +16,10 @@ export class <%= classify(name) %>Repository extends Repository<<%= classify(nam
     query.where('<%= lowerCase(name) %>.userId = :userId', { userId: user.id });
 
     if (search) {
-      // query.andWhere(
-      //   '(<%= lowerCase(name) %>.title LIKE :search OR <%= lowerCase(name) %>.description LIKE :search)',
-      //   { search: `%${search}%` },
-      // );
+      query.andWhere(
+        '(<%= lowerCase(name) %>.name LIKE :search)',
+        { search: `%${search}%` },
+      );
     }
 
     try {

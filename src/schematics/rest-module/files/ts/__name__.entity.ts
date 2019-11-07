@@ -8,11 +8,10 @@ export class <%= classify(name) %> extends BaseEntity {
 
   /*
    * TODO: Insert Your <%= classify(name) %> Entity Columns/Data Schema
-   *
-   * @Column()
-   * title: string;
-   *
    */
+
+  @Column()
+  name: string;
 
   @ManyToOne(type => User, user => user.<%= lowerCase(name) %>s, { eager: false })
   user: User;
