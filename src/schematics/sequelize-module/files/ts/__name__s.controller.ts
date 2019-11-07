@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param } from '@nestjs/common';
 import { Create<%= classify(name) %>Dto } from './dto/create-<%= lowerCase(name) %>.dto';
 import { <%= classify(name) %>sService } from './<%= lowerCase(name) %>s.service';
-import { <%= classify(name) %> } from './interfaces/<%= lowerCase(name) %>.interface';
+import { <%= classify(name) %> } from './<%= lowerCase(name) %>.entity';
 
 @Controller('<%= lowerCase(name) %>s')
 export class <%= classify(name) %>sController {
@@ -9,11 +9,11 @@ export class <%= classify(name) %>sController {
 
   @Post()
   async create(@Body() create<%= classify(name) %>Dto: Create<%= classify(name) %>Dto) {
-    this.<%= lowerCase(name) %>sService.create(create<%= classify(name) %>Dto);
+    await this.<%= lowerCase(name) %>sService.create(create<%= classify(name) %>Dto);
   }
 
   @Get()
   async findAll(): Promise<<%= classify(name) %>[]> {
-    return this.<%= lowerCase(name) %>sService.findAll();
+    return await this.<%= lowerCase(name) %>sService.findAll();
   }
 }
