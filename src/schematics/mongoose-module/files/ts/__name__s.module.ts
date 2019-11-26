@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { <%= classify(name) %>sController } from './<%= lowerCase(name) %>s.controller';
-import { <%= classify(name) %>sService } from './<%= lowerCase(name) %>s.service';
+import { <%= classify(name) %>sController } from './<%= name %>s.controller';
+import { <%= classify(name) %>sService } from './<%= name %>s.service';
 
 @Module({
   controllers: [<%= classify(name) %>sController],

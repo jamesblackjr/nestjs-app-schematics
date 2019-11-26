@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { <%= classify(name) %>sController } from './<%= lowerCase(name) %>s.controller';
-import { <%= classify(name) %>sService } from './<%= lowerCase(name) %>s.service';
-import { <%= lowerCase(name) %>sProviders } from './<%= lowerCase(name) %>s.providers';
+import { <%= classify(name) %>sController } from './<%= name %>s.controller';
+import { <%= classify(name) %>sService } from './<%= name %>s.service';
+import { <%= camelize(name) %>sProviders } from './<%= name %>s.providers';
 import { DatabaseModule } from '../database/database.module';
 
 @Module({
@@ -9,7 +9,7 @@ import { DatabaseModule } from '../database/database.module';
   controllers: [<%= classify(name) %>sController],
   components: [
     <%= classify(name) %>sService,
-    ...<%= lowerCase(name) %>sProviders,
+    ...<%= camelize(name) %>sProviders,
   ],
 })
 export class <%= classify(name) %>sModule {}

@@ -1,6 +1,6 @@
-import { <%= classify(name) %> } from './<%= lowerCase(name) %>.entity';
+import { <%= classify(name) %> } from './<%= name %>.entity';
 
-export const <%= lowerCase(name) %>sProviders = [
+export const <%= camelize(name) %>sProviders = [
   {
     provide: '<%= classify(name) %>sRepository',
     useValue: <%= classify(name) %>,
