@@ -53,4 +53,24 @@ export class <%= classify(name) %>Repository extends Repository<<%= classify(nam
       throw new InternalServerErrorException();
     }
   }
+
+  async update<%= classify(name) %>(update<%= classify(name) %>Dto: Update<%= classify(name) %>Dto, user: User): Promise<<%= classify(name) %>> {
+    const { name } = create<%= classify(name) %>Dto;
+
+    const <%= lowerCase(name) %> = new <%= classify(name) %>();
+
+    <%= lowerCase(name) %>.name = name;
+
+    try {
+      await <%= lowerCase(name) %>.save();
+
+      delete <%= lowerCase(name) %>.user;
+
+      return <%= lowerCase(name) %>;
+    } catch (error) {
+      this.logger.error(`Failed to create a <%= lowerCase(name) %> for user "${user.username}", Data: ${JSON.stringify(update<%= classify(name) %>Dto)}`, error.stack);
+
+      throw new InternalServerErrorException();
+    }
+  }
 }

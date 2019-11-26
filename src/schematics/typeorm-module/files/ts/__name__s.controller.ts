@@ -57,6 +57,18 @@ export class <%= classify(name) %>sController {
     return this.<%= lowerCase(name) %>sService.create<%= classify(name) %>(create<%= classify(name) %>Dto, user);
   }
 
+  @Patch('/:id')
+  @UsePipes(ValidationPipe)
+  update<%= classify(name) %>(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() update<%= classify(name) %>Dto: Update<%= classify(name) %>Dto,
+    @GetUser() user: User,
+  ): Promise<<%= classify(name) %>> {
+    this.logger.verbose(`User "${user.username}" updating a <%= lowerCase(name) %>. Data: ${JSON.stringify(update<%= classify(name) %>Dto)}`);
+
+    return this.<%= lowerCase(name) %>sService.update<%= classify(name) %>(id, update<%= classify(name) %>Dto, user);
+  }
+
   @Delete('/:id')
   delete<%= classify(name) %>(
     @Param('id', ParseIntPipe) id: number,

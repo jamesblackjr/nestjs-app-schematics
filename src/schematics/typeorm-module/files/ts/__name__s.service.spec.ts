@@ -45,7 +45,7 @@ describe('<%= classify(name) %>sService', () => {
 
   describe('get<%= classify(name) %>ById', () => {
     it('calls <%= lowerCase(name) %>Repository.findOne() and successfully retrieve and return the <%= lowerCase(name) %>', async () => {
-      const mock<%= classify(name) %> = { title: 'Test <%= lowerCase(name) %>', description: 'Test desc' };
+      const mock<%= classify(name) %> = { name: 'Test <%= lowerCase(name) %>' };
       <%= lowerCase(name) %>Repository.findOne.mockResolvedValue(mock<%= classify(name) %>);
 
       expect(<%= lowerCase(name) %>Repository.findOne).not.toHaveBeenCalled();
@@ -74,7 +74,7 @@ describe('<%= classify(name) %>sService', () => {
 
       expect(<%= lowerCase(name) %>Repository.create<%= classify(name) %>).not.toHaveBeenCalled();
 
-      const create<%= classify(name) %>Dto = { title: 'Test <%= lowerCase(name) %>', description: 'Test desc' };
+      const create<%= classify(name) %>Dto = { name: 'Test <%= lowerCase(name) %>' };
       const result = await <%= lowerCase(name) %>sService.create<%= classify(name) %>(create<%= classify(name) %>Dto, mockUser);
 
       expect(<%= lowerCase(name) %>Repository.create<%= classify(name) %>).toHaveBeenCalledWith(create<%= classify(name) %>Dto, mockUser);
