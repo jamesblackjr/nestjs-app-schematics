@@ -27,12 +27,6 @@ export class <%= classify(name) %>sResolvers {
     possession: 'any',
   })
   async get<%= classify(name) %>s(@Args() args, @Info() info): Promise<<%= classify(name) %>[]> {
-    args = {
-      ...args,
-      where: {
-        isPublished: true,
-      },
-    };
     return await this.prisma.query.<%= camelize(name) %>s(args, info);
   }
 
@@ -120,12 +114,6 @@ export class <%= classify(name) %>sResolvers {
     possession: 'any',
   })
   on<%= classify(name) %>Mutation(@Args() args, @Info() info) {
-    args = {
-      ...args,
-      where: {
-        isPublished: true,
-      },
-    };
     return this.prisma.subscription.<%= camelize(name) %>(args, info);
   }
 }

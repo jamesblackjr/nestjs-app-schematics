@@ -1,5 +1,13 @@
 # NestJS App Schematics Changelog
 
+1.2.0:
+
+* [[`8627db99a6`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/8627db99a6)] - Add AuthGuard and ACGuard to Prisma Module, Refactor Naming to Support Multi-Word Modules. (James A. Black Jr)
+* [[`a715ee391d`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/a715ee391d)] - Add Support for GraphQL Context in GetUser Decorator. (James A. Black Jr)
+* [[`ef6234854b`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/ef6234854b)] - Refactor Update in TypeORM Module. (James A. Black Jr)
+* [[`24c5dfb1d2`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/24c5dfb1d2)] - Update README.md file. (James A. Black Jr)
+* [[`896f32b09c`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/896f32b09c)] - Update CHANGELOG.md file. (James A. Black Jr)
+
 1.1.1:
 
 * [[`932159c3a2`](https://github.com/jamesblackjr/nestjs-app-schematics/commit/932159c3a2)] - Fix missing name property in TypeORM module generator. (James A. Black Jr)
